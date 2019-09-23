@@ -22,7 +22,34 @@
             </fieldset>
             <fieldset>
                 <legend> Conjunto de campos 2 </legend>
-                Campo de texto 2: <input type="tex" id="campotexto2id" name="campotexto2">
+                Campo de texto 2: <input type="tex" id="campotexto2id" name="campotexto2" placeholder="No escribas mucho cansino">
+            </fieldset>
+        </form>
+
+        <h2> Formulario sencillo 2 en HTML5 </h2>
+        
+        <form name="formulario2" id="formulario2id" method="" action="">
+
+            <fieldset>
+                <legend> Formulario sencillo 2 con labels </legend>
+                <label for="idcampo3" id="etiqueta1"> Introduce el nombre del usuario: </label>
+                <input type="text" id="idcampo3" name="campotexto3" placeholder="Nombre del usuario">
+                <br>
+
+                <h3> Campos de tipo datalist </h3>
+
+                Elija una opción: <input list="listaSSOO" id="SSOO">
+
+                <datalist id="listaSSOO">
+                    <option value="Windows 10 H2 2019"> Windows 10 H2 2019 </option>
+                    <option value="Ubuntu 20.04"> Ubuntu 20.04 </option>
+                    <option value="Debian 10.0 buster"> Debian 10.0 buster </option>
+                </datalist>
+
+                <h3> Elementos de tipo botón </h3>
+                <input type="button" onclick="alert('Hola a tod@s')" id="elementoboton1" value="Saludar">
+                <input type="reset" value="Limpiar campos del formulario 2" id="botonrest1">
+
             </fieldset>
         </form>
     </body>
