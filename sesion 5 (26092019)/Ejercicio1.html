@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
     <head>
 
         <meta charset="UTF-8">
@@ -7,10 +9,21 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title> Ejercicio 1 Sesión 5</title>
 
+        <script>
+        
+            function mostrarValorrango(valor) {
+
+                document.getElementById("camporangomostrar").value=valor;
+
+            }
+            
+        </script>
+
     </head>
+
     <body>
 
-        <h> Sesión 5 </h>
+        <h1> Sesión 5 </h1>
         <h2> Anclas - Enlaces internos </h2>
         <form name="formularioCompleto1" id="formulariocompletoid" action="" method="">
 
@@ -19,21 +32,66 @@
                 <legend> Formulario Completo </legend>
 
                 <label for="campotexto1"> Nombre: </label>
-                <input type="text" id="campotexto1" placeholder="Introduce el nombre">
-                <br>
+                <input type="text" id="campotexto1" placeholder="Introduce el nombre" required>
+                <br><br>
 
                 <label for="areatexto1"> Comentarios </label>
                 <br>
                 <textarea id="areatexto1" cols="60" rows="15" placeholder="Escriba aqui su comentario"></textarea>
+                <br><br>
+
+                <label for="campobusqueda1id"> Término de búsqueda:  </label>
+                <input type="search" id="campobusqueda1id" name="campobusqueda1" placeholder="Termino de busqueda" size="50" maxlength="40">
+                <br><br>
+
+                <label for="contraseniaid1"> Contraseña: </label>
+                <input type="password" name="contrasenia1" id="contraseniaid1" placeholder="********************" size="12">
+                <br><br>
+
+                <label for="ficheroid1"> Selecciona un fichero: </label>
                 <br>
+                <input type="file" name="fichero1" id="ficheroid1">
+                <br><br>
 
-                <label for="campobusqueda1id"> Termino de busqueda:  </label>
-                <input type="search" id="campobusqueda1id" name="campobusqueda1" placeholder="Termino de busqueda">
+                <label for="numberid1"> Campo de tipo número: </label>
+                <input type="number" name="number" id="numberid1">
+                <br><br>
 
+                <label for="urlid1"> Campo de tipo URL: </label>
+                <input type="url" name="url" id="urlid1">
+                <br><br>
+
+                <label for="emailid"> Campo de tipo email: </label>
+                <input type="email" name="email" id="emailid" required>
+                <br><br>
+
+                <label for="dateid"> Campo de tipo fecha: </label>
+                <input type="date" name="date" id="dateid">
+                <br><br>
+
+                <label for="tiempoid"> Campo de tipo tiempo: </label>
+                <input type="time" name="tiempo" id="tiempoid">
+                <br><br>
+
+                <label for="colorid"> Campo de tipo color:  </label>
+                <input type="color" name="color" id="colorid">
+                <br><br>
+
+                <label for="rangoid"> Campo de rangos: </label>
+                <input type="range" name="rango" id="rangoid" title="Rango de valores" min="0" max="10" value="5" step="1" onchange="mostrarValorrango(this.value)">
+                <input type="text" id="camporangomostrar">
+                <br><bR>
+                
+                <label for="dni"> Introduce tu DNI: </label>
+                <input type="text" name="campodni" id="dni" placeholder="Introduce DNI" title="Introduce DNI (8 digitos 0-9) y una letra(A-Z)" pattern="[0-9]{8}[A-Z]{1}" autofocus required>
+                <br><br>
+
+                <input type="submit" value="Validar">
 
             </fieldset>
 
         </form>
 
     </body>
+
 </html>
