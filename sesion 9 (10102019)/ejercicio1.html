@@ -14,6 +14,28 @@
         <h2> Elementos div: elemento de bloque </h2>
 
         <div> Esto es una capa. Se utiliza para estructurar el contenido de la pagina web </div>
+
+        <h2> Elementos de AUDIO </h2>
+        <audio id="audio1" controls>
+            <source src="audio/COSTA - HALLOWEEN (OFFICIAL MUSIC VIDEO).mp3" type="audio/mpeg">
+            <source src="audio/COSTA - HALLOWEEN (OFFICIAL MUSIC VIDEO).wav" type="audio/wav">
+            <source src="audio/COSTA - HALLOWEEN (OFFICIAL MUSIC VIDEO).ogg" type="audio/ogg">
+                tu navegador no soporta audio HTML5
+        </audio>
+
+        <h2> Elementos de tipo progress </h2>
+        <progress max="100" value="33"></progress>
+
+        <h2> Elementos de tipo canvas </h2>
+        <canvas id="canvas1" width="300" height="150" style="border: 1px solid black">
+            tu navegador no soporta el elemnto canvas
+        </canvas>
+        <script>
+            var canvas=document.getElementById("canvas1");
+            var contexto=canvas.getContext("2d");
+            contexto.fillStyle="#FF0000";
+            contexto.fillRect(0,0,150,75)
+        </script>
     </body>
 
 </html>
